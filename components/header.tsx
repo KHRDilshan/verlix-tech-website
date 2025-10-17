@@ -21,19 +21,19 @@ export function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link href="#services" className="text-foreground hover:text-accent transition-colors">
+          <Link href="/services" className="text-foreground hover:text-accent transition-colors">
             Services
           </Link>
-          <Link href="#about" className="text-foreground hover:text-accent transition-colors">
+          <Link href="/about" className="text-foreground hover:text-accent transition-colors">
             About
           </Link>
           <Link href="/projects" className="text-foreground hover:text-accent transition-colors">
             Projects
           </Link>
-          <Link href="#testimonials" className="text-foreground hover:text-accent transition-colors">
+          <Link href="/testimonials" className="text-foreground hover:text-accent transition-colors">
             Testimonials
           </Link>
-          <Link href="#contact" className="text-foreground hover:text-accent transition-colors">
+          <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
             Contact
           </Link>
           <ThemeToggle />
@@ -49,19 +49,19 @@ export function Header() {
         {isOpen && (
           <div className="absolute top-full left-0 right-0 bg-background border-b border-border md:hidden">
             <div className="flex flex-col gap-4 p-4">
-              <Link href="#services" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/services" className="text-foreground hover:text-accent transition-colors">
                 Services
               </Link>
-              <Link href="#about" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/about" className="text-foreground hover:text-accent transition-colors">
                 About
               </Link>
               <Link href="/projects" className="text-foreground hover:text-accent transition-colors">
                 Projects
               </Link>
-              <Link href="#testimonials" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/testimonials" className="text-foreground hover:text-accent transition-colors">
                 Testimonials
               </Link>
-              <Link href="#contact" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
                 Contact
               </Link>
               <div className="flex items-center justify-between">

@@ -11,7 +11,7 @@ const testimonials = [
     message:
       "Verlix Tech transformed our entire digital infrastructure. Their team's expertise in cloud solutions and UI/UX design exceeded our expectations.",
     rating: 5,
-    image: "/professional-woman.png",
+    image: "/professional-woman-ceo.png",
   },
   {
     name: "Michael Chen",
@@ -20,7 +20,7 @@ const testimonials = [
     message:
       "The 3D design work they did for our product was exceptional. They understood our vision and delivered beyond what we imagined.",
     rating: 5,
-    image: "/professional-man.png",
+    image: "/professional-product-manager.png",
   },
   {
     name: "Emma Rodriguez",
@@ -29,7 +29,7 @@ const testimonials = [
     message:
       "Their digital marketing strategies helped us increase our online presence by 300%. Highly professional and results-driven team.",
     rating: 5,
-    image: "/professional-woman-2.png",
+    image: "/professional-woman-marketing-director.jpg",
   },
   {
     name: "David Park",
@@ -38,7 +38,7 @@ const testimonials = [
     message:
       "Building our mobile banking app with Verlix Tech was seamless. Their full-stack expertise and attention to security was impressive.",
     rating: 5,
-    image: "/professional-man-2.png",
+    image: "/professional-man-cto.png",
   },
 ]
 

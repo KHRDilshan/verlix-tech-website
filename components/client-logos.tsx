@@ -1,12 +1,12 @@
 "use client"
 
 const clients = [
-  { name: "TechStart Inc", logo: "/tech-company-logo-1.jpg" },
-  { name: "InnovateLabs", logo: "/tech-company-logo-2.jpg" },
-  { name: "GrowthCo", logo: "/tech-company-logo-3.jpg" },
-  { name: "FinanceFlow", logo: "/tech-company-logo-4.jpg" },
-  { name: "CloudVision", logo: "/tech-company-logo-5.jpg" },
-  { name: "DataSync", logo: "/tech-company-logo-6.jpg" },
+  { name: "TechStart Inc", logo: "/abstract-tech-logo-1.png" },
+  { name: "InnovateLabs", logo: "/abstract-tech-logo-2.png" },
+  { name: "GrowthCo", logo: "/tech-company-logo-abstract-network.png" },
+  { name: "FinanceFlow", logo: "/tech-company-logo-abstract-network.png" },
+  { name: "CloudVision", logo: "/tech-company-logo-abstract-network.png" },
+  { name: "DataSync", logo: "/tech-company-logo-abstract-hexagon.png" },
 ]
 
 export function ClientLogos() {

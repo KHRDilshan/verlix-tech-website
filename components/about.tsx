@@ -15,7 +15,7 @@ export function About() {
               solutions that empower businesses to grow in the modern world.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Whether it's building a powerful mobile app, designing a 3D product prototype, or boosting your brand
+              Whether it's building a powerful Web / mobile apps, designing a 3D product prototype, or boosting your brand
               presence online — we're here to make it happen. We believe in combining creativity, precision, and
               technology to deliver meaningful results that help businesses thrive.
             </p>
@@ -24,13 +24,13 @@ export function About() {
                 <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
                   <div className="w-2 h-2 rounded-full bg-accent" />
                 </div>
-                <span className="text-foreground">Expert team with 5+ years of experience</span>
+                <span className="text-foreground">Expert team with 24/7h support </span>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
                   <div className="w-2 h-2 rounded-full bg-accent" />
                 </div>
-                <span className="text-foreground">Proven track record with 50+ successful projects</span>
+                <span className="text-foreground">Proven track record with successful projects</span>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
@@ -46,11 +46,11 @@ export function About() {
             <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 border border-primary/20">
               <div className="space-y-6">
                 <div className="p-4 bg-card rounded-lg border border-border">
-                  <div className="text-3xl font-bold text-accent mb-2">50+</div>
+                  <div className="text-3xl font-bold text-accent mb-2">5+</div>
                   <div className="text-muted-foreground">Projects Delivered</div>
                 </div>
                 <div className="p-4 bg-card rounded-lg border border-border">
-                  <div className="text-3xl font-bold text-accent mb-2">30+</div>
+                  <div className="text-3xl font-bold text-accent mb-2">5+</div>
                   <div className="text-muted-foreground">Happy Clients</div>
                 </div>
                 <div className="p-4 bg-card rounded-lg border border-border">

@@ -11,8 +11,8 @@ const services = [
   },
   {
     icon: Cube,
-    title: "SolidWorks 3D Design & Modeling",
-    description: "Create precision 3D product prototypes and engineering designs that bring your vision to life.",
+    title: "SolidWorks 3D modelling & Product design",
+    description: "Professional 3D design and product modeling for engineering and visualization.",
     color: "from-accent to-accent/50",
   },
   {

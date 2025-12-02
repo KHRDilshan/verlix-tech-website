@@ -6,20 +6,20 @@ import { ClientTestimonials } from "@/components/client-testimonials"
 import { ClientLogos } from "@/components/client-logos"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
-import { Breadcrumb } from "@/components/breadcrumb"
+import type { Metadata } from "next"
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Breadcrumb />
+      {/* <Breadcrumb /> */}
       <main>
         <Hero />
         <Services />
         <About />
         <ClientTestimonials />
         <ClientLogos />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
 
@@ -31,84 +31,89 @@ export default function Home() {
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://verlix.tech/#organization",
+                "@id": "https://www.verlixtech.com/#organization",
                 name: "Verlix Tech",
-                url: "https://verlix.tech",
+                url: "https://www.verlixtech.com",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://verlix.tech/logo.png",
-                  width: 40,
-                  height: 40,
+                  url: "https://www.verlixtech.com/logo.png",
+                  width: 120,
+                  height: 120,
                 },
-                description: "Verlix Tech delivers smart, scalable, and creative digital solutions",
+                description:
+                  "Verlix Tech delivers smart, scalable, and creative digital solutions in Web & Mobile App Development, 3D Design, UI/UX Design, Cloud Solutions, and Digital Marketing.",
                 sameAs: [
-                  "https://facebook.com/verlixtech",
-                  "https://twitter.com/verlixtech",
                   "https://linkedin.com/company/verlixtech",
-                  "https://instagram.com/verlixtech",
                 ],
                 contactPoint: {
                   "@type": "ContactPoint",
                   contactType: "Customer Service",
-                  telephone: "+1-555-123-4567",
-                  email: "hello@verlix.tech",
-                  areaServed: "US",
-                  availableLanguage: "en",
+                  telephone: "+94-763212835",
+                  email: "info.verlixtech@gmail.com",
+                  areaServed: "LK",
+                  availableLanguage: "English",
                 },
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "123 Tech Street",
-                  addressLocality: "San Francisco",
-                  addressRegion: "CA",
-                  postalCode: "94105",
-                  addressCountry: "US",
+                  streetAddress: "NO.51/D, Karaneyekamull, Bemmulla",
+                  addressLocality: "Gampaha",
+                  addressRegion: "Western Province",
+                  postalCode: "XXXX",
+                  addressCountry: "LK",
                 },
               },
               {
                 "@type": "LocalBusiness",
-                "@id": "https://verlix.tech/#localbusiness",
+                "@id": "https://www.verlixtech.com/#localbusiness",
                 name: "Verlix Tech",
-                image: "https://verlix.tech/logo.png",
+                image: "https://www.verlixtech.com/og-image.png",
                 description: "Digital innovation and technology solutions provider",
-                url: "https://verlix.tech",
-                telephone: "+1-555-123-4567",
-                email: "hello@verlix.tech",
+                url: "https://www.verlixtech.com",
+                telephone: "+94-XXXXXXXXX",
+                email: "info.verlixtech@gmail.com",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "123 Tech Street",
-                  addressLocality: "San Francisco",
-                  addressRegion: "CA",
-                  postalCode: "94105",
-                  addressCountry: "US",
-                },
-                geo: {
-                  "@type": "GeoCoordinates",
-                  latitude: "37.7749",
-                  longitude: "-122.4194",
+                  streetAddress: "NO.51/D, Karaneyekamull, Bemmulla",
+                  addressLocality: "Gampaha",
+                  addressRegion: "Western Province",
+                  postalCode: "XXXX",
+                  addressCountry: "LK",
                 },
                 openingHoursSpecification: {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
                   opens: "09:00",
                   closes: "18:00",
                 },
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://verlix.tech/#breadcrumb",
+                "@id": "https://www.verlixtech.com/#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://verlix.tech",
+                    item: "https://www.verlixtech.com",
                   },
                   {
                     "@type": "ListItem",
-                    position: 2,
-                    name: "Digital Solutions",
-                    item: "https://verlix.tech/#services",
+                    position: 3,
+                    name: "About",
+                    item: "https://www.verlixtech.com/about",
                   },
+                                    {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://www.verlixtech.com/services",
+                  }
                 ],
               },
             ],

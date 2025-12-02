@@ -2,10 +2,11 @@
 
 import { useEffect, useRef } from "react"
 import { ArrowRight, Sparkles } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-
+  const router = useRouter()
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -62,7 +63,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50" />
@@ -81,22 +82,21 @@ export function Hero() {
           <span className="text-foreground">Dominate.</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-          Verlix Tech is your strategic partner for cutting-edge IT solutions. We combine creativity, precision, and
-          technology to deliver meaningful results that help businesses thrive.
-        </p>
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+      Verlix Tech empowers businesses with cutting-edge IT solutions. We blend creativity, engineering precision, and emerging technologies to build intelligent, scalable, and future-ready products that drive growth and innovation.
+ </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <button className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-2 group">
+          <button    onClick={() => router.push("/services")} className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-2 group">
             Explore Services
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary/5 transition-all">
+          <button onClick={() => router.push("/projects")} className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary/5 transition-all">
             View Our Work
           </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 max-w-md mx-auto text-sm">
+        {/* <div className="grid grid-cols-3 gap-4 max-w-md mx-auto text-sm">
           <div className="p-3 bg-card rounded-lg border border-border">
             <div className="font-bold text-accent">50+</div>
             <div className="text-muted-foreground">Projects</div>
@@ -109,7 +109,7 @@ export function Hero() {
             <div className="font-bold text-accent">5+</div>
             <div className="text-muted-foreground">Years</div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />

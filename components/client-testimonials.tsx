@@ -5,41 +5,32 @@ import { useState, useEffect } from "react"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    company: "TechStart Inc",
-    role: "CEO",
+    name: "Dr. (Eng.) Ananda Handunge",
+    company: "Global Engineering Solutions (pvt) Ltd",
+    role: "Chairman / Chief Executive Officer",
     message:
-      "Verlix Tech transformed our entire digital infrastructure. Their team's expertise in cloud solutions and UI/UX design exceeded our expectations.",
+      "Thank you so much for your outstanding work! Your dedication and effort truly made a difference, and the results speak for themselves. I really appreciate your commitment and the high quality of work done.",
     rating: 5,
-    image: "/professional-woman-ceo.png",
+    image: "/DrAnanda.webp",
   },
   {
-    name: "Michael Chen",
-    company: "InnovateLabs",
-    role: "Product Manager",
+    name: "Odv - Labs",
+    company: "France",
+    role: "Odv - Labs",
     message:
-      "The 3D design work they did for our product was exceptional. They understood our vision and delivered beyond what we imagined.",
+      "Pour cette première expérience ,j'avoue avoir été plus que convaincu par le professionnalisme et la qualité du travail. Son écoute a mon projet, ses compétences on permis de mener a bien ce travail. N'hésitez pas a lui faire confiance. ( For this first experience, I must say I was more than impressed by the professionalism and quality of the work. His attentiveness to my project and his skills allowed us to successfully complete the work. Don't hesitate to trust him.)",
     rating: 5,
     image: "/professional-product-manager.png",
   },
   {
-    name: "Emma Rodriguez",
-    company: "GrowthCo",
-    role: "Marketing Director",
+    name: "Odv - Labs",
+    company: "France",
+    role: "Odv - Labs",
     message:
-      "Their digital marketing strategies helped us increase our online presence by 300%. Highly professional and results-driven team.",
+      "Je n'es qu'un mot a dire : Bravo.Encore une fois vous avez effectué le travail que souhaite et comme je l'imagine.Merci beaucoup pour ce travail. ( I only have one word to say: Bravo. Once again, you've done the job exactly as I wanted and envisioned it. Thank you so much for this work.)",
     rating: 5,
-    image: "/professional-woman-marketing-director.jpg",
-  },
-  {
-    name: "David Park",
-    company: "FinanceFlow",
-    role: "CTO",
-    message:
-      "Building our mobile banking app with Verlix Tech was seamless. Their full-stack expertise and attention to security was impressive.",
-    rating: 5,
-    image: "/professional-man-cto.png",
-  },
+    image: "/professional-product-manager.png",
+  }
 ]
 
 export function ClientTestimonials() {

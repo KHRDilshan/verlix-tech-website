@@ -33,8 +33,6 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Breadcrumb items={[{ label: "Contact", href: "/contact" }]} />
-
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-accent/10 to-background">
         <div className="max-w-7xl mx-auto text-center">
@@ -57,7 +55,7 @@ export default function ContactPage() {
               <Mail size={28} />
             </div>
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <p className="text-foreground/70 mb-2">hello@verlixtech.com</p>
+            <p className="text-foreground/70 mb-2">info.verlixtech@gmail.com</p>
             <p className="text-sm text-foreground/60">We'll respond within 24 hours</p>
           </div>
 
@@ -66,8 +64,9 @@ export default function ContactPage() {
               <Phone size={28} />
             </div>
             <h3 className="text-lg font-bold mb-2">Phone</h3>
-            <p className="text-foreground/70 mb-2">+1 (555) 123-4567</p>
-            <p className="text-sm text-foreground/60">Mon-Fri, 9AM-6PM EST</p>
+            <p className="text-foreground/70 mb-1">+94 70 233 7467</p>
+             <p className="text-foreground/70 mb-2">+94 76 321 2835</p>
+            {/* <p className="text-sm text-foreground/60">9AM-6PM EST</p> */}
           </div>
 
           <div className="bg-card border border-border rounded-xl p-8 text-center">
@@ -75,13 +74,13 @@ export default function ContactPage() {
               <MapPin size={28} />
             </div>
             <h3 className="text-lg font-bold mb-2">Location</h3>
-            <p className="text-foreground/70 mb-2">San Francisco, CA</p>
+            <p className="text-foreground/70 mb-2">Gampaha, Sri Lanka</p>
             <p className="text-sm text-foreground/60">Available for remote collaboration</p>
           </div>
         </div>
 
         {/* Contact Form */}
-        <div className="max-w-3xl mx-auto">
+        {/* <div className="max-w-3xl mx-auto">
           <div className="bg-card border border-border rounded-xl p-8 md:p-12">
             <h2 className="text-2xl font-bold mb-8">Send us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -176,7 +175,7 @@ export default function ContactPage() {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* FAQ Section */}

@@ -7,11 +7,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#1a183c] text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">Verlix Tech</h3>
+            <h3 className="font-bold text-lg mb-4">VerlixTech</h3>
             <p className="text-primary-foreground/80">
               Transforming ideas into intelligent digital and engineering realities.
             </p>
@@ -72,18 +72,18 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
+              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
               <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
-              </a>
+              </a> */}
               <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
+              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

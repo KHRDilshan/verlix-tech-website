@@ -49,7 +49,7 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="max-w-2xl mx-auto bg-card rounded-xl border border-border p-8">
+        {/* <div className="max-w-2xl mx-auto bg-card rounded-xl border border-border p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-4">
               <input
@@ -93,7 +93,7 @@ export function Contact() {
               <Send size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   )

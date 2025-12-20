@@ -34,7 +34,7 @@ title: {
     description: "Transform ideas into intelligent digital and engineering realities",
     type: "website",
     locale: "en_US",
-    url: "https://www.verlixtech.com",
+    url: "https://www.verlixtech.com/",
     siteName: "Verlix Tech",
     images: [
       {
@@ -64,7 +64,7 @@ title: {
     },
   },
   alternates: {
-    canonical: "https://www.verlixtech.com",
+    canonical: "https://www.verlixtech.com/",
   },
   verification: {
     google: "google-site-verification-code",
@@ -85,7 +85,7 @@ export default function RootLayout({
         name: "Verlix Tech",
         alternateName: "Verlix Tech",
         description: "Smart, scalable, and innovative digital solutions for web, mobile, and engineering.",
-        url: "https://www.verlixtech.com",
+        url: "https://www.verlixtech.com/",
         logo: "https://www.verlixtech.com/og-image.png",
         contactPoint: {
           "@type": "ContactPoint",
@@ -114,7 +114,7 @@ export default function RootLayout({
         "@type": "WebSite",
         name: "Verlix Tech",
         alternateName: "Verlix Tech",
-        url: "https://www.verlixtech.com",
+        url: "https://www.verlixtech.com/",
         description: "Smart, scalable, and innovative digital solutions for web, mobile, and engineering.",
         publisher: {
           "@type": "Organization",
@@ -175,7 +175,7 @@ export default function RootLayout({
         <meta name="referrer" content="strict-origin-when-cross-origin" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://www.verlixtech.com" />
+        <link rel="canonical" href="https://www.verlixtech.com/" />
 
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -212,7 +212,7 @@ export default function RootLayout({
         name: "Verlix Tech",
         alternateName: "Verlix Tech",
         description: "Smart, scalable, and innovative digital solutions for web, mobile, and engineering.",
-        url: "https://www.verlixtech.com",
+        url: "https://www.verlixtech.com/",
         logo: "https://www.verlixtech.com/og-image.png",
         contactPoint: {
           "@type": "ContactPoint",
@@ -242,7 +242,7 @@ export default function RootLayout({
         "@type": "WebSite",
         name: "Verlix Tech",
         alternateName: "Verlix Tech",
-        url: "https://www.verlixtech.com",
+        url: "https://www.verlixtech.com/",
         description: "Smart, scalable, and innovative digital solutions for web, mobile, and engineering.",
         publisher: {
           "@type": "Organization",

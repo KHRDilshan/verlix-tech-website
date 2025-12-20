@@ -8,13 +8,14 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Verlix Tech — The Elixir of Digital Innovation",
-    icons:{
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
+title: {
+  default: "Verlix Tech",
+  template: "%s | Verlix Tech",
+},
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   description:
     "Verlix Tech delivers smart, scalable, and creative digital solutions. Web & Mobile App Development, SolidWorks 3D modelling & Product design, UI/UX Design, Cloud Solutions, and Digital Marketing.",
@@ -162,11 +163,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        {/* Security Headers */}
+        {/* Security Headers
         <meta
           httpEquiv="Content-Security-Policy"
           content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.vercel-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://cdn.vercel-analytics.com;"
         />
+         */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
@@ -180,15 +182,16 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdn.vercel-analytics.com" />
 
-        {/* Favicon and app icons */}
+        {/* Favicon and app icons 
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:site_name" content="SAGA Engineering (Pvt) Ltd" />
-        <meta property="og:url" content="https://www.sagaengineering.lk/" />
-        <meta property="og:title" content="SAGA Engineering (Pvt) Ltd" />
-        <meta property="og:description" content="Professional industrial machinery import and supply services with comprehensive engineering solutions." />
-        <meta property="og:image" content="https://www.sagaengineering.lk/Logo.webp" />
+        */}
+        <meta property="og:site_name" content="Verlix Tech" />
+        <meta property="og:url" content="https://www.verlixtech.com/" />
+        <meta property="og:title" content="Verlix Tech" />
+        <meta property="og:description" content="Smart, scalable, and innovative digital solutions for web, mobile, and engineering." />
+        <meta property="og:image" content="https://www.verlixtech.com/Logo.webp" />
         <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.sagaengineering.lk/" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.verlixtech.com/" />
         <meta name="color-scheme" content="light dark" />
                  <script
           type="application/ld+json"

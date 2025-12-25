@@ -54,24 +54,13 @@ title: {
     creator: "@verlixtech",
     images: ["https://www.verlixtech.com/og-image.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+ robots: "index, follow",
   alternates: {
     canonical: "https://www.verlixtech.com/",
   },
   verification: {
-    google: "google-site-verification-code",
-  },
-      generator: 'v0.app'
+    google: "ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ",
+  }
 }
 
 export default function RootLayout({
@@ -178,11 +167,6 @@ export default function RootLayout({
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.verlixtech.com/" />
-
-        {/* Preconnect to external domains */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://cdn.vercel-analytics.com" />
 
         {/* Favicon and app icons 
         <link rel="icon" href="/favicon.ico" />

@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <Breadcrumb /> */}
-      <main>
+      {/* <Breadcrumb /> */} 
+      <main className="">
         <Hero />
         <Services />
         <About />

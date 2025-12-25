@@ -6,20 +6,20 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6  text-center md:text-left">
               About <span className="text-accent">Verlix Tech</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-4">
+            <p className="text-lg text-muted-foreground mb-4 text-center md:text-left">
               At Verlix Tech, our mission is to transform ideas into intelligent digital and engineering realities.
               We're a forward-thinking technology company dedicated to delivering smart, scalable, and creative digital
               solutions that empower businesses to grow in the modern world.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6  text-center md:text-left">
               Whether it's building a powerful Web / mobile apps, designing a 3D product prototype, or boosting your brand
               presence online — we're here to make it happen. We believe in combining creativity, precision, and
               technology to deliver meaningful results that help businesses thrive.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-3 ">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
                   <div className="w-2 h-2 rounded-full bg-accent" />

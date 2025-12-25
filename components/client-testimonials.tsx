@@ -18,7 +18,7 @@ const testimonials = [
     company: "France",
     role: "Odv - Labs",
     message:
-      "Pour cette première expérience ,j'avoue avoir été plus que convaincu par le professionnalisme et la qualité du travail. Son écoute a mon projet, ses compétences on permis de mener a bien ce travail. N'hésitez pas a lui faire confiance. ( For this first experience, I must say I was more than impressed by the professionalism and quality of the work. His attentiveness to my project and his skills allowed us to successfully complete the work. Don't hesitate to trust him.)",
+      "Pour cette première expérience ,j'avoue avoir été plus que convaincu par le professionnalisme et la qualité du travail. Son écoute a mon projet, ses compétences on permis de mener a bien ce travail. N'hésitez pas a lui faire confiance.",
     rating: 5,
     image: "/professional-product-manager.png",
   },
@@ -63,8 +63,8 @@ export function ClientTestimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonials" className="py-20 bg-background -mt-20">
+      <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8 w-[90%] md:w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             What Our <span className="text-accent">Clients Say</span>
@@ -74,11 +74,12 @@ export function ClientTestimonials() {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative ">
           {/* Slider content */}
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-500 ease-out"
+              className="flex transition-transform duration-500 ease-out will-change-transform"
+
               style={{
                 transform: `translateX(-${currentIndex * 100}%)`,
               }}
@@ -115,7 +116,7 @@ export function ClientTestimonials() {
 
           <button
             onClick={goToPrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 md:-translate-x-20 p-2 rounded-full bg-accent/10 hover:bg-accent/20 text-accent transition-all duration-300 z-10"
+            className="absolute hidden md:left-0 md:flex top-1/2 -translate-y-1/2 -translate-x-16 md:-translate-x-20 p-2 rounded-full bg-accent/10 hover:bg-accent/20 text-accent transition-all duration-300 z-10"
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={24} />
@@ -123,7 +124,7 @@ export function ClientTestimonials() {
 
           <button
             onClick={goToNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 md:translate-x-20 p-2 rounded-full bg-accent/10 hover:bg-accent/20 text-accent transition-all duration-300 z-10"
+            className="absolute hidden md:right-0 md:flex top-1/2 -translate-y-1/2 translate-x-16 md:translate-x-20 p-2 rounded-full bg-accent/10 hover:bg-accent/20 text-accent transition-all duration-300 z-10"
             aria-label="Next testimonial"
           >
             <ChevronRight size={24} />

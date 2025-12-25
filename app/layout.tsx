@@ -12,10 +12,12 @@ title: {
   default: "Verlix Tech",
   template: "%s | Verlix Tech",
 },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+  icons:{
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
   },
   description:
     "Verlix Tech delivers smart, scalable, and creative digital solutions. Web & Mobile App Development, SolidWorks 3D modelling & Product design, UI/UX Design, Cloud Solutions, and Digital Marketing.",
@@ -159,7 +161,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -185,6 +187,9 @@ export default function RootLayout({
         {/* Favicon and app icons 
         <link rel="icon" href="/favicon.ico" />
         */}
+                <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
         <meta property="og:site_name" content="Verlix Tech" />
         <meta property="og:url" content="https://www.verlixtech.com/" />
         <meta property="og:title" content="Verlix Tech" />

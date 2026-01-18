@@ -61,8 +61,11 @@ title: {
     canonical: "https://www.verlixtech.com/",
   },
   verification: {
-    google: "ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ",
+    google: "O_3PEqxY_p38gVBzWZODRUczICo6Mo-1V-4v-wbfLeo",
   }
+  // verification: {
+  //   google: "ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ",
+  // }
 }
 
 export default function RootLayout({

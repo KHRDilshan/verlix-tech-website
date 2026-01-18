@@ -166,6 +166,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
          <link rel="icon" href="/favicon-192x192.png?v=2" sizes="192x192" />
           <link rel="icon" href="/favicon-512x512.png?v=2" sizes="512x512" />
+          <link rel="manifest" href="/site.webmanifest" />
         <meta property="og:site_name" content="Verlix Tech" />
         <meta property="og:url" content="https://www.verlixtech.com/" />
         <meta property="og:title" content="Verlix Tech" />

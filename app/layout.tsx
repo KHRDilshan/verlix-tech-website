@@ -17,6 +17,8 @@ title: {
       { url: "/favicon.ico" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" }
     ],
   },
   description:
@@ -162,6 +164,8 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
+         <link rel="icon" href="/favicon-192x192.png?v=2" sizes="192x192" />
+          <link rel="icon" href="/favicon-512x512.png?v=2" sizes="512x512" />
         <meta property="og:site_name" content="Verlix Tech" />
         <meta property="og:url" content="https://www.verlixtech.com/" />
         <meta property="og:title" content="Verlix Tech" />

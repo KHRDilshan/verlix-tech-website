@@ -175,7 +175,6 @@ export default function RootLayout({
         <meta property="og:title" content="Verlix Tech" />
         <meta property="og:description" content="Smart, scalable, and innovative digital solutions for web, mobile, and engineering." />
         <meta property="og:image" content="https://www.verlixtech.com/Logo.webp" />
-        <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
         <meta name="google-site-verification" content="O_3PEqxY_p38gVBzWZODRUczICo6Mo-1V-4v-wbfLeo" />
         <link rel="alternate" hrefLang="x-default" href="https://www.verlixtech.com/" />
         <meta name="color-scheme" content="light dark" />

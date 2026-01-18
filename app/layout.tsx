@@ -153,24 +153,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-        {/* Security Headers
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.vercel-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://cdn.vercel-analytics.com;"
-        />
-         */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-        {/* Canonical URL */}
         <link rel="canonical" href="https://www.verlixtech.com/" />
-
-        {/* Favicon and app icons 
-        <link rel="icon" href="/favicon.ico" />
-        */}
                 <link rel="icon" href="/favicon.ico?v=2" />
         <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
@@ -180,6 +168,7 @@ export default function RootLayout({
         <meta property="og:description" content="Smart, scalable, and innovative digital solutions for web, mobile, and engineering." />
         <meta property="og:image" content="https://www.verlixtech.com/Logo.webp" />
         <meta name="google-site-verification" content="ERnScZFGanFENVOOM7CCokcgOHQeKIEJpSshBEthzvQ" />
+        <meta name="google-site-verification" content="O_3PEqxY_p38gVBzWZODRUczICo6Mo-1V-4v-wbfLeo" />
         <link rel="alternate" hrefLang="x-default" href="https://www.verlixtech.com/" />
         <meta name="color-scheme" content="light dark" />
                  <script
@@ -273,7 +262,6 @@ export default function RootLayout({
           }}
         />
         
-        {/* Breadcrumb Schema for navigation structure */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -116,3 +116,120 @@ export function Hero() {
     </section>
   )
 }
+
+
+// "use client"
+
+// import { useState } from "react"
+
+// export function Hero() {
+//   const videos = ["/Video4.mp4","/Video1.mp4","/Video6.mp4", "/Video2.mp4","/Video3.mp4"]
+//   const [currentVideo, setCurrentVideo] = useState(0)
+
+//   return (
+//     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      
+//       {/* CARD CONTAINER (fixed size) */}
+//       <div className="relative w-[95%] h-[80vh] max-w-8xl rounded-4xl overflow-hidden mt-10">
+        
+//         {/* VIDEO (fills card height & width) */}
+//         <video
+//           playsInline
+//           muted
+//           autoPlay
+//           preload="auto"
+//           onEnded={() =>
+//             setCurrentVideo((prev) => (prev + 1) % videos.length)
+//           }
+//           key={videos[currentVideo]}
+//           className="absolute inset-0 w-full h-full object-top object-cover"
+//         >
+//           <source src={videos[currentVideo]} type="video/mp4" />
+//         </video>
+
+//       </div>
+      
+
+//     </section>
+//   )
+// }
+
+
+// "use client"
+
+// import { useEffect, useState } from "react"
+
+// export function Hero() {
+//   const videos = [
+//     "/Video4.mp4",
+//     "/Video1.mp4",
+//     "/Video6.mp4",
+//     "/Video2.mp4",
+//     "/Video3.mp4",
+//   ]
+
+//   const captions = [
+//     "Building the Future with AI",
+//     "Smart Digital Engineering",
+//     "Automation Meets Intelligence",
+//     "Innovate. Design. Dominate.",
+//     "Technology That Works Together",
+//   ]
+
+//   const [currentVideo, setCurrentVideo] = useState(0)
+//   const [showText, setShowText] = useState(true)
+
+//   // Animate text in/out per video
+//   useEffect(() => {
+//     setShowText(true)
+
+//     const hideTimer = setTimeout(() => {
+//       setShowText(false)
+//     }, 7950) // text visible duration
+
+//     return () => clearTimeout(hideTimer)
+//   }, [currentVideo])
+
+//   return (
+//     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+//       <div className="relative w-[95%] h-[80vh] max-w-8xl rounded-3xl overflow-hidden mt-10">
+
+//         {/* VIDEO */}
+//         <video
+//           playsInline
+//           muted
+//           autoPlay
+//           preload="auto"
+//           onEnded={() =>
+//             setCurrentVideo((prev) => (prev + 1) % videos.length)
+//           }
+//           key={videos[currentVideo]}
+//           className="absolute inset-0 w-full h-full object-cover object-top"
+//         >
+//           <source src={videos[currentVideo]} type="video/mp4" />
+//         </video>
+
+//         {/* FULL CARD DARK OVERLAY */}
+//         <div
+//           className={`absolute inset-0 bg-black/40 z-10
+//             transition-all duration-700 ease-out
+//             ${showText ? "opacity-100" : "opacity-0"}
+//           `}
+//         />
+
+//         {/* CENTERED ANIMATED TEXT */}
+//         <div className="absolute inset-0 z-20 flex items-center justify-center">
+//           <h1
+//             className={`text-white text-2xl md:text-6xl font-bold tracking-wide text-center
+//               transition-all duration-700 ease-out
+//               ${showText ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}
+//             `}
+//           >
+//             {captions[currentVideo]}
+//           </h1>
+//         </div>
+
+//       </div>
+//     </section>
+//   )
+// }

@@ -164,11 +164,11 @@ export default function RootLayout({
         <meta name="referrer" content="strict-origin-when-cross-origin" />
 
         <link rel="canonical" href="https://www.verlixtech.com/" />
-                <link rel="icon" href="/favicon.ico?v=2" />
-        <link rel="icon" href="/favicon-32x32.png?v=2" sizes="32x32" />
-        <link rel="icon" href="/favicon-16x16.png?v=2" sizes="16x16" />
-         <link rel="icon" href="/favicon-192x192.png?v=2" sizes="192x192" />
-          <link rel="icon" href="/favicon-512x512.png?v=2" sizes="512x512" />
+                <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+         <link rel="icon" href="/favicon-192x192.png" sizes="192x192" />
+          <link rel="icon" href="/favicon-512x512.png" sizes="512x512" />
           <link rel="manifest" href="/site.webmanifest" />
         <meta property="og:site_name" content="Verlix Tech" />
         <meta property="og:url" content="https://www.verlixtech.com/" />

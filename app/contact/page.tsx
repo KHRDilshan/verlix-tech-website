@@ -47,7 +47,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-16">
           {/* Contact Info Cards */}
           <div className="bg-card border border-border rounded-xl p-8 text-center">
@@ -55,7 +55,7 @@ export default function ContactPage() {
               <Mail size={28} />
             </div>
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <p className="text-foreground/70 mb-2">info.verlixtech@gmail.com</p>
+            <p className="text-foreground/70 mb-2">info@verlixtech.com</p>
             <p className="text-sm text-foreground/60">We'll respond within 24 hours</p>
           </div>
 

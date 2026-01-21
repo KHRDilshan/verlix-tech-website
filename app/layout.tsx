@@ -3,10 +3,22 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { DM_Serif_Display, Inter } from 'next/font/google'
+import AOSProvider from './AOSProvider';
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+const dmSerif = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-dm-serif',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 export const metadata: Metadata = {
 title: {
   default: "Verlix Tech",
@@ -152,7 +164,8 @@ export default function RootLayout({
     }
   }
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning       className={`${inter.variable} ${dmSerif.variable}`}
+>
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -306,8 +319,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
+  <AOSProvider>{children}</AOSProvider>        <Analytics />
       </body>
     </html>
   )

@@ -11,7 +11,7 @@ export function Header() {
 
   return (
        <header
-      className="sticky  z-50 bg-black/40 backdrop-blur-sm  animate-fade-in-down rounded-4xl top-4  w-[98%] justify-center mx-auto shadow-lg border border-white/10"
+      className="sticky  z-50 bg-white/80 backdrop-blur-sm  animate-fade-in-down rounded-4xl top-0 mt-2  w-[98%] justify-center mx-auto shadow-lg border border-white/10"
     >        <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
          <Image 
@@ -29,23 +29,23 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-6">
 
-          <Link href="/about" className="text-white hover:text-accent transition-colors">
+          <Link href="/about" className="text-black hover:text-accent transition-colors">
             About
           </Link>
-                    <Link href="/services" className="text-white hover:text-accent transition-colors">
+                    <Link href="/services" className="text-black hover:text-accent transition-colors">
             Services
           </Link>
           {/* <Link href="/projects" className="text-foreground hover:text-accent transition-colors">
             Projects
           </Link> */}
-          <Link href="/testimonials" className="text-white hover:text-accent transition-colors">
+          <Link href="/testimonials" className="text-black hover:text-accent transition-colors">
             Testimonials
           </Link>
 
           <ThemeToggle />
                            <Link href="/contact">
 
-          <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-[#28C28D] to-[#26838B] text-white rounded-full hover:opacity-90 transition text-sm font-medium animate-fade-in-right z-50 cursor-pointer">
+          <button className="hidden md:block px-6 py-2 bg-black text-white rounded-full hover:opacity-90 transition text-sm font-medium animate-fade-in-right z-50 cursor-pointer">
             Contact us →
           </button>
           </Link>

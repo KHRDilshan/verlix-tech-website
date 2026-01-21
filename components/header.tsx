@@ -51,26 +51,26 @@ export function Header() {
           </Link>
         </div>
 
-        <button className="md:hidden z-50 cursor-pointer " onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+        <button className="md:hidden z-50 cursor-pointer text-white " onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 bg-background border-b border-border md:hidden">
+          <div className="absolute top-full mt-4 rounded-3xl left-0 right-0 bg-black/80 border-b border-border md:hidden" data-aos="fade-top" data-aos-duration="300">
             <div className="flex flex-col gap-4 p-4">
-              <Link href="/services" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/services" className="text-white hover:text-accent transition-colors">
                 Services
               </Link>
-              <Link href="/about" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/about" className="text-white hover:text-accent transition-colors">
                 About
               </Link>
-              <Link href="/projects" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/projects" className="text-white hover:text-accent transition-colors">
                 Projects
               </Link>
-              <Link href="/testimonials" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/testimonials" className="text-white hover:text-accent transition-colors">
                 Testimonials
               </Link>
-              <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/contact" className="text-white hover:text-accent transition-colors">
                 Contact
               </Link>
 

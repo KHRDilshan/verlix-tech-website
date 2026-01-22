@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       {/* <Breadcrumb /> */} 
-      <main className="bg-[#181818]">
+      <main className="">
         <Hero />
         <About />
         <WhyChoose />

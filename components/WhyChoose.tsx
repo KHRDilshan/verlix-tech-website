@@ -48,7 +48,7 @@ export function WhyChoose() {
   ]
 
   return (
-    <section className="min-h-screen py-10 md:py-20 -mb-10 md:-mb-0" ref={ref}>
+    <section className="mt-10 md:mt-0" ref={ref}>
       
       <div className="max-w-[90%]  mx-auto  rounded-3xl bg-[#0f0f0f] text-primary-foreground p-6 sm:p-8 md:p-12 lg:p-16  hover:border-teal-500 hover:shadow-[0_0_40px_rgba(20,184,166,0.15)] border border-zinc-800 transition-all duration-500" 
 data-aos="zoom-in"     data-aos-duration="1000"

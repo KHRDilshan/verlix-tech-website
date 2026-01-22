@@ -22,7 +22,7 @@ export default function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="min-h-screen mb-20 md:mb-0 relative "
+      className="mt-0 md:mt-20 relative "
     >
       <div className="absolute inset-0 -z-10 ">
         <div className="absolute top-1/2 left-1/2 w-[70%] h-[600px] bg-teal-400/10 rounded-full blur-3xl animate-floatGlow -translate-x-1/2 -translate-y-1/2" />

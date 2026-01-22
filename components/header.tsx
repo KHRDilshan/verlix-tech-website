@@ -42,7 +42,7 @@ export function Header() {
             Testimonials
           </Link>
 
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
                            <Link href="/contact">
 
           <button className="hidden md:block px-6 py-2 bg-white text-black rounded-full hover:opacity-90 transition text-sm font-medium animate-fade-in-right z-50 cursor-pointer">

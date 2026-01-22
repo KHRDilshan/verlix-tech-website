@@ -181,7 +181,7 @@ export function ClientTestimonials() {
   const t = testimonials[index]
 
   return (
-    <section className="min-h-screen text-center relative px-2">
+    <section className="mt-20 mb-20 text-center relative px-2">
       <h2 className="text-2xl md:text-3xl font-serif bg-gradient-to-r from-[#28C28D] to-[#26838B] text-transparent bg-clip-text mb-2" data-aos="zoom-in-up" data-aos-duration="1000">
         The Highest Standards. The Happiest Customers.
       </h2>

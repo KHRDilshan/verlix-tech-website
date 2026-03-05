@@ -22,7 +22,6 @@ export default function ProjectsPage() {
   return (
     <>
       <Header />
-      <Breadcrumb />
       <main>
         <ProjectsShowcase />
       </main>

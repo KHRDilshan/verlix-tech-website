@@ -6,64 +6,42 @@ import { Breadcrumb } from "@/components/breadcrumb"
 import { Star } from "lucide-react"
 
 const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "CEO",
-    company: "TechStart Inc",
-    image: "/professional-woman-ceo.jpg",
+ {
+    name: "Dr. (Eng.) Ananda Handunge",
+    company: "Global Engineering Solutions (pvt) Ltd",
+    role: "Chairman / Chief Executive Officer",
+    text:
+      "Thank you so much for your outstanding work! Your dedication and effort truly made a difference, and the results speak for themselves. I really appreciate your commitment and the high quality of work done.",
     rating: 5,
-    text: "Verlix Tech transformed our vision into a stunning mobile app. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
+    image: "/DrAnanda.webp",
   },
   {
-    name: "Michael Chen",
-    role: "Product Manager",
-    company: "InnovateLabs",
-    image: "/professional-man-product-manager.jpg",
+    name: "Odv - Labs",
+    company: "France",
+    role: "Odv - Labs",
+    text:
+      "Pour cette première expérience ,j'avoue avoir été plus que convaincu par le professionnalisme et la qualité du travail. Son écoute a mon projet, ses compétences on permis de mener a bien ce travail. N'hésitez pas a lui faire confiance. ( For this first experience, I must say I was more than impressed by the professionalism and quality of the work. His attentiveness to my project and his skills allowed us to successfully complete the work. Don't hesitate to trust him.)",
     rating: 5,
-    text: "The 3D design and product modeling services were exceptional. They understood our requirements perfectly and delivered detailed CAD models that impressed our entire team.",
+    image: "/professional-product-manager.png",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Marketing Director",
-    company: "BrandBoost Co",
-    image: "/professional-woman-marketing-director.jpg",
+    name: "Odv - Labs",
+    company: "France",
+    role: "Odv - Labs",
+   text:
+      "Je n'es qu'un mot a dire : Bravo.Encore une fois vous avez effectué le travail que souhaite et comme je l'imagine.Merci beaucoup pour ce travail. ( I only have one word to say: Bravo. Once again, you've done the job exactly as I wanted and envisioned it. Thank you so much for this work.)",
     rating: 5,
-    text: "Their digital marketing strategy increased our online presence significantly. The team was strategic, data-driven, and truly invested in our success.",
-  },
-  {
-    name: "David Thompson",
-    role: "CTO",
-    company: "CloudFirst Systems",
-    image: "/professional-man-cto.jpg",
-    rating: 5,
-    text: "The cloud infrastructure solutions they provided are robust and scalable. Their technical expertise and attention to security gave us complete peace of mind.",
-  },
-  {
-    name: "Lisa Anderson",
-    role: "Founder",
-    company: "DesignHub Studio",
-    image: "/professional-woman-founder.jpg",
-    rating: 5,
-    text: "Working with Verlix Tech on our UI/UX design was a game-changer. They created a design system that perfectly aligned with our brand and user needs.",
-  },
-  {
-    name: "James Wilson",
-    role: "Operations Manager",
-    company: "LogisticsPro",
-    image: "/professional-man-operations.jpg",
-    rating: 5,
-    text: "Their automation solutions streamlined our operations and reduced costs significantly. The implementation was smooth and the support was outstanding.",
-  },
+    image: "/professional-product-manager.png",
+  }
 ]
 
 export default function TestimonialsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Breadcrumb items={[{ label: "Testimonials", href: "/testimonials" }]} />
 
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-primary/10 to-background">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Client Testimonials
@@ -75,7 +53,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="mb-20 mt-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, idx) => (
@@ -118,19 +96,19 @@ export default function TestimonialsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center text-white">
             <div>
-              <div className="text-4xl font-bold mb-2">150+</div>
+              <div className="text-4xl font-bold mb-2">5+</div>
               <p className="text-white/90">Projects Completed</p>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">98%</div>
+              <div className="text-4xl font-bold mb-2">100%</div>
               <p className="text-white/90">Client Satisfaction</p>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-4xl font-bold mb-2">5+</div>
               <p className="text-white/90">Happy Clients</p>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">8+</div>
+              <div className="text-4xl font-bold mb-2">3+</div>
               <p className="text-white/90">Years Experience</p>
             </div>
           </div>

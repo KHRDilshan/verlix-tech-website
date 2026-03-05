@@ -40,7 +40,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
+      className="p-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors cursor-pointer"
       aria-label="Toggle dark mode"
     >
       {isDark ? <Sun size={20} className="text-accent" /> : <Moon size={20} className="text-primary" />}

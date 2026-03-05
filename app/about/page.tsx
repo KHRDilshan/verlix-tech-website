@@ -32,15 +32,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Breadcrumb items={[{ label: "About", href: "/about" }]} />
-
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-accent/10 to-background">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mt-10 mx-auto items-center text-center justify-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
             About Verlix Tech
           </h1>
-          <p className="text-xl text-foreground/80 max-w-3xl">
+          <p className="text-xl text-foreground/80 ">
             We are a forward-thinking technology company dedicated to delivering smart, scalable, and creative digital
             solutions that empower businesses to grow in the modern world.
           </p>
@@ -48,15 +46,13 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 mb-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="bg-card border border-border rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4 text-primary">Our Mission</h2>
             <p className="text-foreground/80 leading-relaxed">
               To transform ideas into intelligent digital and engineering realities. We combine creativity, precision,
-              and technology to deliver meaningful results that help businesses thrive. Whether it's building a powerful
-              mobile app, designing a 3D product prototype, or boosting your brand presence online — we're here to make
-              it happen.
+              and technology to deliver meaningful results that help businesses thrive.
             </p>
           </div>
 
@@ -72,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-foreground/5">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -133,14 +129,14 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent to-primary">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent to-primary">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Let's Build Something Amazing Together</h2>
           <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
             Start Your Project
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

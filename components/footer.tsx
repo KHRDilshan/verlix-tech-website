@@ -7,11 +7,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-gradient-to-r from-[#28C28D] to-[#1f7c85] text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">Verlix Tech</h3>
+            <h3 className="font-bold text-lg mb-4">VerlixTech</h3>
             <p className="text-primary-foreground/80">
               Transforming ideas into intelligent digital and engineering realities.
             </p>
@@ -52,18 +52,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#portfolio" className="hover:text-primary-foreground transition-colors">
-                  Portfolio
+                <Link href="/services" className="hover:text-primary-foreground transition-colors">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-primary-foreground transition-colors">
-                  Contact
+                <Link href="/testimonials" className="hover:text-primary-foreground transition-colors">
+                  Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-primary-foreground transition-colors">
-                  Privacy Policy
+                <Link href="/contact" className="hover:text-primary-foreground transition-colors">
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -72,18 +72,18 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
+              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
               <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="LinkedIn">
+              </a> */}
+              <a href="https://www.linkedin.com/company/verlixtech" className="hover:text-primary-foreground/80 transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
+              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

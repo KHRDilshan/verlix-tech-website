@@ -7,77 +7,70 @@ import { ChevronRight, ExternalLink } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    description:
-      "Full-stack e-commerce solution with payment integration, inventory management, and real-time analytics.",
-    image: "/modern-e-commerce-platform-dashboard.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    link: "#",
+    title: "Global Engineering Solutions",
+    category: "Web Development , Social Media Coverage",
+     description: `
+🌐 About GES -
+Since 2006, GES has specialized in the import and installation of Electrical & Manual Lifting Hoists, Overhead Cranes, and material handling equipment. They are the exclusive Sri Lankan agent for Black Bear Hoists (Taiwan), with over 600 successful installations across major industries.
+`,
+    image: "/globalsolutions.webp",
+    tags: [],
+    link: "https://www.globalengnsolutions.com/",
   },
   {
     id: 2,
-    title: "Mobile Fitness App",
-    category: "Mobile App Development",
-    description: "Cross-platform fitness tracking app with AI-powered workout recommendations and social features.",
-    image: "/fitness-app-interface-workout-tracking.jpg",
-    tags: ["React Native", "Firebase", "AI/ML"],
-    link: "#",
+    title: "SAGA Engineering (Pvt) Ltd",
+    category: "Web Development",
+    description: "🌐 About SAGA Engineering - SAGA Engineering specializes in comprehensive mechanical engineering services, including design, installation, and maintenance of industrial equipment. Their expertise spans machinery import & supply, preventive and corrective maintenance, and full project support, ensuring optimal performance and safety.",
+    image: "/Saga.webp",
+    tags: [],
+    link: "https://www.sagaengineering.lk/",
   },
   {
     id: 3,
-    title: "3D Product Visualization",
-    category: "3D Design & SolidWorks",
-    description: "Interactive 3D product configurator for manufacturing company with real-time rendering.",
-    image: "/3d-product-visualization-interface.jpg",
-    tags: ["Three.js", "SolidWorks", "WebGL"],
+    title: "SIS Group (Pvt) Ltd Website (Ongoing)",
+    category: "Web Development",
+    description: "🌐 About SIS Group - SIS Group delivers innovative and sustainable solutions to both domestic and industrial engineering sectors. With years of industry experience, they offer a wide range of products and services to help customers achieve efficiency, sustainability, and cost-effectiveness.",
+    image: "/sisgorup.png",
+    tags: [],
     link: "#",
   },
   {
     id: 4,
-    title: "SaaS Dashboard",
-    category: "Full-Stack Solution",
-    description: "Enterprise-grade analytics dashboard with real-time data visualization and custom reporting.",
-    image: "/analytics-dashboard-charts-graphs.jpg",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Recharts"],
+    title: "ODV - Labs",
+    category: "Full-Stack Dashboard for IOT Project , real time Weather data analysis",
+    description: "The dashboard visualizes real-time weather and environmental data collected from IoT sensors, offering insights through interactive charts, graphs.",
+    image: "/odvlab1.webp",
+    tags: ["Location - France"],
     link: "#",
   },
-  {
+    {
     id: 5,
-    title: "Brand Identity Design",
-    category: "UI/UX Design",
-    description: "Complete brand identity system including logo, color palette, typography, and design guidelines.",
-    image: "/brand-identity-design-system.png",
-    tags: ["Figma", "Design System", "Branding"],
+    title: "ODV - Labs",
+    category: "Full-Stack Dashboard for IOT Project , Video data analysis, sensor data vizualizaton and real time video stream",
+    description: "The dashboard visualizes real-time sensor data vizualizaton, video stream , offering insights through interactive charts, graphs.",
+    image: "/odvlab2.jpeg",
+    tags: ["Location - France"],
     link: "#",
   },
   {
     id: 6,
-    title: "Cloud Migration Solution",
-    category: "Cloud Solutions",
-    description: "Seamless migration of legacy systems to cloud infrastructure with zero downtime deployment.",
-    image: "/cloud-infrastructure-architecture.jpg",
-    tags: ["AWS", "Docker", "Kubernetes", "DevOps"],
+    title: "Zion Property Care",
+    category: "Brand Identity Design, ",
+    description: "Founded in 2024, we're dedicated to revolutionizing property management across Sri Lanka with integrity, transparency, and exceptional service.",
+    image: "/zionproperty.png",
+    tags: [],
     link: "#",
   },
-  {
-    id: 7,
-    title: "AI Chatbot Integration",
-    category: "Web Development",
-    description: "Intelligent customer support chatbot with natural language processing and multi-language support.",
-    image: "/ai-chatbot-interface-conversation.jpg",
-    tags: ["Python", "NLP", "React", "OpenAI"],
-    link: "#",
-  },
-  {
-    id: 8,
-    title: "Digital Marketing Campaign",
-    category: "Digital Marketing",
-    description: "Multi-channel marketing campaign with SEO optimization, social media strategy, and content creation.",
-    image: "/digital-marketing-campaign-analytics.jpg",
-    tags: ["SEO", "Social Media", "Content", "Analytics"],
-    link: "#",
-  },
+  // {
+  //   id: 7,
+  //   title: "Digital Marketing Campaign",
+  //   category: "Digital Marketing",
+  //   description: "Multi-channel marketing campaign with SEO optimization, social media strategy, and content creation.",
+  //   image: "/digital-marketing-campaign-analytics.jpg",
+  //   tags: ["SEO", "Social Media", "Content", "Analytics"],
+  //   link: "#",
+  // },
 ]
 
 const categories = [
@@ -112,7 +105,7 @@ export function ProjectsShowcase() {
         </div>
 
         {/* Category Filter */}
-        <div className="mb-12 flex flex-wrap gap-3 justify-center">
+        {/* <div className="mb-12 flex flex-wrap gap-3 justify-center">
           {categories.map((category) => (
             <button
               key={category}
@@ -126,16 +119,16 @@ export function ProjectsShowcase() {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <div
-              key={project.id}
-              className="group bg-card rounded-xl overflow-hidden border border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-accent/20 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+<div
+  key={project.id}
+  className={`group bg-card rounded-xl overflow-hidden border border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-accent/20 animate-fade-in delay-[${index * 100}ms]`}
+>
+           
               {/* Project Image */}
               <div className="relative h-64 overflow-hidden bg-muted">
                 <Image
@@ -159,7 +152,7 @@ export function ProjectsShowcase() {
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <p className="text-sm font-semibold text-accent mb-1">{project.category}</p>
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-[#1a183c] transition-colors">
                       {project.title}
                     </h3>
                   </div>
@@ -190,7 +183,7 @@ export function ProjectsShowcase() {
             Let's collaborate to bring your ideas to life. Contact us today to discuss your project requirements.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all"
           >
             Get Started <ChevronRight size={20} />

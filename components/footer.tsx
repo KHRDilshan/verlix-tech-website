@@ -72,18 +72,18 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/p/VerlixTech-61585873443580/" className="hover:text-primary-foreground/80 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Twitter">
+              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a> */}
               <a href="https://www.linkedin.com/company/verlixtech" className="hover:text-primary-foreground/80 transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              {/* <a href="#" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/verlixtech?igsh=YTF5bXY5NWFuNmd3" className="hover:text-primary-foreground/80 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>

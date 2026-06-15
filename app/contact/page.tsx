@@ -64,6 +64,7 @@ export default function ContactPage() {
               <Phone size={28} />
             </div>
             <h3 className="text-lg font-bold mb-2">Phone</h3>
+             <p className="text-foreground/70 mb-1">+94 70 233 7467</p>
             <p className="text-foreground/70 mb-1">+94 77 307 6676</p>
              
             {/* <p className="text-sm text-foreground/60">9AM-6PM EST</p> */}

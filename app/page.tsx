@@ -8,6 +8,7 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import type { Metadata } from "next"
 import Services from "@/components/services"
+import { ProjectsShowcase } from "@/components/projects-showcase"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <WhyChoose />
         <Services />
+        <ProjectsShowcase />
         <ClientTestimonials />
         {/* <ClientLogos /> */}
         {/* <Contact /> */}

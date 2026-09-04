@@ -412,7 +412,7 @@ const projects = [
   {
     id: 3,
     title: "SIS Group (Pvt) Ltd Website ",
-    desktopImage: "/sis group.png",
+    desktopImage: "/sis group.webp",
     mobileImage: "/sis group-mobile.png",
     link: "https://www.sisgroup.lk/",
   },
@@ -435,7 +435,7 @@ const projects = [
     title: "Pink Lotus Residences (Pvt) Ltd",
     desktopImage: "/Pinklotus.png",
     mobileImage: "/Pinklotus-mobile.png",
-    link: "https://www.pinklotusresidences.lk/",
+    link: "https://pinklotusresidences.lk/",
   },
 ];
 
